@@ -1,136 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 80, Failures: 76, Errors: 0, Skipped: 0, Time elapsed: 3.463 s <<< FAILURE! -- in com.examly.springapp.SpringappApplicationTests
-com.examly.springapp.SpringappApplicationTests.Day4_test_ProductModel_File_Exists -- Time elapsed: 0.008 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_ProductModel_File_Exists(SpringappApplicationTests.java:66)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_SupplierModel_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_SupplierModel_File_Exists(SpringappApplicationTests.java:72)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderModel_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderModel_File_Exists(SpringappApplicationTests.java:78)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderItemModel_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderItemModel_File_Exists(SpringappApplicationTests.java:84)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_CustomerReturnModel_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
-	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
-	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_CustomerReturnModel_File_Exists(SpringappApplicationTests.java:90)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_Product_Has_Entity_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ Product class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_Product_Has_Entity_Annotation(SpringappApplicationTests.java:106)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_Product_Has_Id_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ Product class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_Product_Has_Id_Annotation(SpringappApplicationTests.java:125)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_Supplier_Has_Entity_Annotation -- Time elapsed: 0.012 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ Supplier class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_Supplier_Has_Entity_Annotation(SpringappApplicationTests.java:138)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_Supplier_Has_Id_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ Supplier class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_Supplier_Has_Id_Annotation(SpringappApplicationTests.java:157)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_CustomerReturn_Has_Entity_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ CustomerReturn class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_CustomerReturn_Has_Entity_Annotation(SpringappApplicationTests.java:170)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrder_Has_Entity_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ PurchaseOrder class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrder_Has_Entity_Annotation(SpringappApplicationTests.java:183)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderItem_Has_Entity_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
-org.opentest4j.AssertionFailedError: ❌ PurchaseOrderItem class not found.
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
-	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
-	at com.examly.springapp.SpringappApplicationTests.Day4_test_PurchaseOrderItem_Has_Entity_Annotation(SpringappApplicationTests.java:196)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-
-com.examly.springapp.SpringappApplicationTests.Day5_test_ProductRepo_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+Tests run: 80, Failures: 64, Errors: 0, Skipped: 0, Time elapsed: 5.164 s <<< FAILURE! -- in com.examly.springapp.SpringappApplicationTests
+com.examly.springapp.SpringappApplicationTests.Day5_test_ProductRepo_File_Exists -- Time elapsed: 0.008 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -143,7 +15,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_SupplierRepo_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_SupplierRepo_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -156,7 +28,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderRepo_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderRepo_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -169,7 +41,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderItemRepo_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderItemRepo_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -195,7 +67,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_ProductRepo_Has_Repository_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_ProductRepo_Has_Repository_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductRepo class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -204,7 +76,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductRepo class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_SupplierRepo_Has_Repository_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_SupplierRepo_Has_Repository_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ SupplierRepo class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -213,7 +85,7 @@ org.opentest4j.AssertionFailedError: ❌ SupplierRepo class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_CustomerReturnRepo_Has_Repository_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_CustomerReturnRepo_Has_Repository_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ CustomerReturnRepo class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -222,7 +94,7 @@ org.opentest4j.AssertionFailedError: ❌ CustomerReturnRepo class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderRepo_Has_Repository_Annotation -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderRepo_Has_Repository_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ PurchaseOrderRepo class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -231,7 +103,7 @@ org.opentest4j.AssertionFailedError: ❌ PurchaseOrderRepo class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderItemRepo_Has_Repository_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day5_test_PurchaseOrderItemRepo_Has_Repository_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ PurchaseOrderItemRepo class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -240,7 +112,7 @@ org.opentest4j.AssertionFailedError: ❌ PurchaseOrderItemRepo class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -253,7 +125,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_SupplierController_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_SupplierController_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -266,7 +138,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderController_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderController_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -292,7 +164,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderItemController_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderItemController_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -305,7 +177,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_RestController_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_RestController_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -332,7 +204,7 @@ org.opentest4j.AssertionFailedError: ❌ PurchaseOrderController class not found
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_CustomerReturnController_Has_RestController_Annotation -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_CustomerReturnController_Has_RestController_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ CustomerReturnController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -341,7 +213,7 @@ org.opentest4j.AssertionFailedError: ❌ CustomerReturnController class not foun
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderItemController_Has_RestController_Annotation -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_PurchaseOrderItemController_Has_RestController_Annotation -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ PurchaseOrderItemController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -359,7 +231,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_GetMapping -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_GetMapping -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -377,7 +249,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_DeleteMapping -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_ProductController_Has_DeleteMapping -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -386,7 +258,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_test_SupplierController_Has_PostMapping -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_test_SupplierController_Has_PostMapping -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -395,7 +267,7 @@ org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_testCreateProduct_NoBody_StatusBadRequest -- Time elapsed: 0.065 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_testCreateProduct_NoBody_StatusBadRequest -- Time elapsed: 0.087 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<400> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -406,7 +278,7 @@ java.lang.AssertionError: Status expected:<400> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day6_testGetAllProducts_StatusNoContent -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day6_testGetAllProducts_StatusNoContent -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<204> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -417,7 +289,7 @@ java.lang.AssertionError: Status expected:<204> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_ProductController_Has_RequestMapping -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_ProductController_Has_RequestMapping -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -426,7 +298,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_ProductController_Has_PathVariable -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_ProductController_Has_PathVariable -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -435,7 +307,7 @@ org.opentest4j.AssertionFailedError: ❌ ProductController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_SupplierController_Has_RequestMapping -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_SupplierController_Has_RequestMapping -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -444,7 +316,7 @@ org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_SupplierController_Has_PathVariable -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_SupplierController_Has_PathVariable -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -453,7 +325,7 @@ org.opentest4j.AssertionFailedError: ❌ SupplierController class not found.
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_PurchaseOrderController_Has_RequestMapping -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_PurchaseOrderController_Has_RequestMapping -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ PurchaseOrderController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -462,7 +334,7 @@ org.opentest4j.AssertionFailedError: ❌ PurchaseOrderController class not found
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day7_test_CustomerReturnController_Has_RequestMapping -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day7_test_CustomerReturnController_Has_RequestMapping -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: ❌ CustomerReturnController class not found.
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
 	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
@@ -471,7 +343,7 @@ org.opentest4j.AssertionFailedError: ❌ CustomerReturnController class not foun
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_ProductService_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_ProductService_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -484,7 +356,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_SupplierService_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_SupplierService_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -497,7 +369,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_CustomerReturnService_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_CustomerReturnService_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -510,7 +382,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderService_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderService_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -523,7 +395,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderItemService_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderItemService_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -536,7 +408,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_ProductServiceImpl_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_ProductServiceImpl_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -575,7 +447,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderServiceImpl_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderServiceImpl_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -588,7 +460,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderItemServiceImpl_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_test_PurchaseOrderItemServiceImpl_File_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -601,7 +473,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day8_testAddProduct -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day8_testAddProduct -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -612,7 +484,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testGetAllProducts -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testGetAllProducts -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -623,7 +495,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day9_testGetProductById -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day9_testGetProductById -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -645,7 +517,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testAddSupplier -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testAddSupplier -- Time elapsed: 0.029 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -656,7 +528,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testGetAllSuppliers -- Time elapsed: 0.007 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testGetAllSuppliers -- Time elapsed: 0.006 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -667,7 +539,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testGetSupplierById -- Time elapsed: 0.007 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testGetSupplierById -- Time elapsed: 0.006 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -689,7 +561,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testAddPurchaseOrder -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testAddPurchaseOrder -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -700,7 +572,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testGetAllPurchaseOrders -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testGetAllPurchaseOrders -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -711,7 +583,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testGetPurchaseOrderById -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testGetPurchaseOrderById -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -733,7 +605,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testAddCustomerReturn -- Time elapsed: 0.007 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testAddCustomerReturn -- Time elapsed: 0.040 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -744,7 +616,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetAllCustomerReturns -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetAllCustomerReturns -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -755,7 +627,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCustomerReturnById -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetCustomerReturnById -- Time elapsed: 0.006 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -766,7 +638,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day13_testAddPurchaseOrderItem -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day13_testAddPurchaseOrderItem -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -788,7 +660,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_Exception_Directory_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_Exception_Directory_Exists -- Time elapsed: 0.004 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -801,7 +673,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_ResourceNotFoundException_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_ResourceNotFoundException_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -814,7 +686,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day14test_configuartion_Directory_Exists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14test_configuartion_Directory_Exists -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
