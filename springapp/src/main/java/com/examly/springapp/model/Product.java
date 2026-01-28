@@ -14,16 +14,16 @@ public class Product {
     private double price;
     private int stockQuantity;
 
-    public Product() {
-    }
+    public Product() {}
+    
 
-    public Product(int id, String productName, String description, double price, int stockQuantity) {
-        this.id = id;
+    public Product(String productName, String description, double price, int stockQuantity) {
         this.productName = productName;
         this.description = description;
         this.price = price;
         this.stockQuantity = stockQuantity;
     }
+
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }

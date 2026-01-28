@@ -1,32 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.examly.springapp.SpringappApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 80, Failures: 19, Errors: 0, Skipped: 0, Time elapsed: 4.027 s <<< FAILURE! -- in com.examly.springapp.SpringappApplicationTests
-com.examly.springapp.SpringappApplicationTests.Day9_testGetProductById -- Time elapsed: 0.008 s <<< FAILURE!
-java.lang.AssertionError: No value at JSON path "$.productName"
-	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:351)
-	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:148)
-	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:112)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.examly.springapp.SpringappApplicationTests.Day9_testGetProductById(SpringappApplicationTests.java:729)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['productName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
-
-com.examly.springapp.SpringappApplicationTests.Day9_testUpdateProduct -- Time elapsed: 0.005 s <<< FAILURE!
-java.lang.AssertionError: No value at JSON path "$.productName"
-	at org.springframework.test.util.JsonPathExpectationsHelper.evaluateJsonPath(JsonPathExpectationsHelper.java:351)
-	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:148)
-	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$2(JsonPathResultMatchers.java:112)
-	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
-	at com.examly.springapp.SpringappApplicationTests.Day9_testUpdateProduct(SpringappApplicationTests.java:741)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.jayway.jsonpath.PathNotFoundException: Expected to find an object with property ['productName'] in path $ but found 'java.lang.String'. This is not a json object according to the JsonProvider: 'com.jayway.jsonpath.spi.json.JsonSmartJsonProvider'.
-
-com.examly.springapp.SpringappApplicationTests.Day10_testAddSupplier -- Time elapsed: 0.011 s <<< FAILURE!
+Tests run: 80, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 5.556 s <<< FAILURE! -- in com.examly.springapp.SpringappApplicationTests
+com.examly.springapp.SpringappApplicationTests.Day10_testAddSupplier -- Time elapsed: 0.015 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -37,7 +13,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testGetAllSuppliers -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testGetAllSuppliers -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -59,7 +35,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day10_testUpdateSupplier -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day10_testUpdateSupplier -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -70,7 +46,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testAddPurchaseOrder -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testAddPurchaseOrder -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -103,7 +79,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day11_testUpdatePurchaseOrder -- Time elapsed: 0.005 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day11_testUpdatePurchaseOrder -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -114,7 +90,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testAddCustomerReturn -- Time elapsed: 0.006 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testAddCustomerReturn -- Time elapsed: 0.007 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -125,7 +101,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetAllCustomerReturns -- Time elapsed: 0.004 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetAllCustomerReturns -- Time elapsed: 0.005 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -136,7 +112,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day12_testGetCustomerReturnById -- Time elapsed: 0.004 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day12_testGetCustomerReturnById -- Time elapsed: 0.008 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -147,7 +123,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day13_testAddPurchaseOrderItem -- Time elapsed: 0.004 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day13_testAddPurchaseOrderItem -- Time elapsed: 0.030 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<201> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -158,7 +134,7 @@ java.lang.AssertionError: Status expected:<201> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day13_testGetPurchaseOrderItemsByOrderId -- Time elapsed: 0.004 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day13_testGetPurchaseOrderItemsByOrderId -- Time elapsed: 0.006 s <<< FAILURE!
 java.lang.AssertionError: Status expected:<200> but was:<404>
 	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
 	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
@@ -169,7 +145,7 @@ java.lang.AssertionError: Status expected:<200> but was:<404>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_Exception_Directory_Exists -- Time elapsed: 0.035 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_Exception_Directory_Exists -- Time elapsed: 0.005 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -182,7 +158,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day14_test_ResourceNotFoundException_File_Exists -- Time elapsed: 0.003 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day14_test_ResourceNotFoundException_File_Exists -- Time elapsed: 0.002 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -208,7 +184,7 @@ org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 
-com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists -- Time elapsed: 0.002 s <<< FAILURE!
+com.examly.springapp.SpringappApplicationTests.Day15_testAOPLogFileExists -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

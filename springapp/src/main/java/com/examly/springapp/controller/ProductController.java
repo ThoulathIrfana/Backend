@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/products")   // 🔥 MUST match test URL
+@RequestMapping("/api/products")
 public class ProductController {
 
     private final ProductService productService;
@@ -18,38 +18,38 @@ public class ProductController {
         this.productService = productService;
     }
 
-    // ✅ Day6 No Body → 400
-    // ✅ Day8 Add Product → 201 Created
+    // CREATE
     @PostMapping
     public ResponseEntity<Product> createProduct(@RequestBody(required = false) Product product) {
-        if (product == null) {
-            return ResponseEntity.badRequest().build();
-        }
-        Product savedProduct = productService.addProduct(product);
-        return new ResponseEntity<>(savedProduct, HttpStatus.CREATED); // 🔥 201
+        if (product == null) return ResponseEntity.badRequest().build();
+        return new ResponseEntity<>(productService.addProduct(product), HttpStatus.CREATED);
     }
 
-    // ✅ Day6 Empty List → 204
+    // GET ALL
     @GetMapping
     public ResponseEntity<List<Product>> getAllProducts() {
         List<Product> products = productService.getAllProducts();
-        if (products == null || products.isEmpty()) {
-            return ResponseEntity.noContent().build();
-        }
+        if (products.isEmpty()) return ResponseEntity.noContent().build();
         return ResponseEntity.ok(products);
     }
 
-    // Required for earlier tests
+    // GET BY ID
     @GetMapping("/{id}")
-    public ResponseEntity<String> getProductById(@PathVariable int id) {
-        return ResponseEntity.ok("Product " + id);
+    public ResponseEntity<Product> getProductById(@PathVariable int id) {
+        Product product = productService.getProductById(id);
+        if (product == null) return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(product);
     }
 
+    // UPDATE
     @PutMapping("/{id}")
-    public ResponseEntity<String> updateProduct(@PathVariable int id, @RequestBody Product product) {
-        return ResponseEntity.ok("Updated product " + id);
+    public ResponseEntity<Product> updateProduct(@PathVariable int id, @RequestBody Product product) {
+        Product updated = productService.updateProduct(id, product);
+        if (updated == null) return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(updated);
     }
 
+    // DELETE (kept for earlier tests)
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteProduct(@PathVariable int id) {
         return ResponseEntity.ok("Deleted product " + id);
