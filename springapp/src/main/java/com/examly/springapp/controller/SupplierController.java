@@ -1,19 +1,46 @@
 package com.examly.springapp.controller;
 
-import org.springframework.web.bind.annotation.*;
+import com.examly.springapp.model.Supplier;
+import com.examly.springapp.service.SupplierService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/suppliers")
+@RequestMapping("/api/suppliers")
 public class SupplierController {
 
-    @PostMapping
-    public ResponseEntity<String> createSupplier(@RequestBody String supplier) {
-        return ResponseEntity.ok("Supplier created");
+    private final SupplierService supplierService;
+
+    public SupplierController(SupplierService supplierService) {
+        this.supplierService = supplierService;
     }
 
+    // CREATE
+    @PostMapping
+    public ResponseEntity<Supplier> addSupplier(@RequestBody Supplier supplier) {
+        return new ResponseEntity<>(supplierService.addSupplier(supplier), HttpStatus.CREATED);
+    }
+
+    // GET ALL
+    @GetMapping
+    public ResponseEntity<List<Supplier>> getAllSuppliers() {
+        return ResponseEntity.ok(supplierService.getAllSuppliers());
+    }
+
+    // GET BY ID
     @GetMapping("/{id}")
-    public ResponseEntity<String> getSupplier(@PathVariable int id) {
-        return ResponseEntity.ok("Supplier " + id);
+    public ResponseEntity<Supplier> getSupplierById(@PathVariable Long id) {
+        Supplier supplier = supplierService.getSupplierById(id);
+        return ResponseEntity.ok(supplier);
+    }
+
+    // UPDATE
+    @PutMapping("/{id}")
+    public ResponseEntity<Supplier> updateSupplier(@PathVariable Long id, @RequestBody Supplier supplier) {
+        Supplier updated = supplierService.updateSupplier(id, supplier);
+        return ResponseEntity.ok(updated);
     }
 }
